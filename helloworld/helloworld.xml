@@ -1,7 +1,7 @@
 <context>
     <input pattern="(hi|hello) *">
         <!-- Greet the user if we know his/her name -->
-        <output value="Hello $UserName!" if="full($UserName)"/>
+        <output value="Hello, $UserName!" if="full($UserName)"/>
 
         <!-- Or activate an inner context to ask the user about his/her name -->
         <context if="empty($UserName)" modal="true"> <!-- We use a modal context, so our bot will recognize any text as the user’s name -->
